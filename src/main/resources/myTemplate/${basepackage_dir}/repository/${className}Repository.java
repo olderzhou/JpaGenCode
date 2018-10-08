@@ -1,8 +1,9 @@
+<#include "/java_copyright.include"/>
 <#assign className = table.className>
 <#assign classNameLower = className?uncap_first>
 package ${basepackage}.repository;
 
-import com.msxf.tool.model.*;
+import ${basepackage}.model.*;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;

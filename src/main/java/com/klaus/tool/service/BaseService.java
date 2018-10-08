@@ -1,8 +1,14 @@
-<#include "/java_copyright.include"/>
-package ${basepackage}.service;
+/*
+ * Powered By [rapid-framework]
+ * Web Site: http://www.rapid-framework.org.cn
+ * Google Code: http://code.google.com/p/rapid-framework/
+ * Since 2017 - 2018
+ */
 
-import ${basepackage}.entity.BaseQuery;
-import ${basepackage}.entity.PageResult;
+package com.klaus.tool.service;
+
+import com.klaus.tool.entity.BaseQuery;
+import com.klaus.tool.entity.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.JpaRepository;

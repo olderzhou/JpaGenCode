@@ -1,5 +1,11 @@
-<#include "/java_copyright.include"/>
-package ${basepackage}.entity;
+/*
+ * Powered By [rapid-framework]
+ * Web Site: http://www.rapid-framework.org.cn
+ * Google Code: http://code.google.com/p/rapid-framework/
+ * Since 2017 - 2018
+ */
+
+package com.klaus.tool.entity;
 
 import java.util.List;
 

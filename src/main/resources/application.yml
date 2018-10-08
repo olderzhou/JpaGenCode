@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/xboot?useSSL=false&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    max-idle: 10
+    max-wait: 10000
+    min-idle: 5
+    initial-size: 5
+    validation-query: SELECT 1
+    test-on-borrow: false
+    test-while-idle: true
+    time-between-eviction-runs-millis: 18800
+    jdbc-interceptors: ConnectionState;SlowQueryReport(threshold=0)
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+server:
+  port: 8801
+
+
+logging:
+  level:
+    com.msxf.tool: DEBUG
+  file: log.txt
+
+
+swagger:
+  enabled: true
+  title: test2
+  description: test2 for my test
+  version: 1.0.0.snap-shot
+  license: Apache License, Version 2.0
+  licenseUrl: https://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfServiceUrl: https://github.com/olderzhou/test2
+  contact:
+    name: klaus mikaelson
+    url: http://blog.klausmikaelson.top
+    email: love20141002@126.com
+  base-package: com.klaus.tool
+  base-path: /**
+  exclude-path: /error, /ops/**

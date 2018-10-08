@@ -1,10 +1,14 @@
-<#include "/java_copyright.include"/>
-<#assign className = table.className>
-<#assign classNameLower = className?uncap_first>
-package ${basepackage}.controller;
+/*
+ * Powered By [rapid-framework]
+ * Web Site: http://www.rapid-framework.org.cn
+ * Google Code: http://code.google.com/p/rapid-framework/
+ * Since 2017 - 2018
+ */
 
-import ${basepackage}.entity.${className}Query;
-import ${basepackage}.service.${className}Service;
+package com.klaus.tool.controller;
+
+import com.klaus.tool.entity.LogQuery;
+import com.klaus.tool.service.LogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,14 +19,14 @@ import com.klaus.tool.entity.R;
 * @author klaus mikaelson
 */
 @RestController()
-@RequestMapping("/api/v1/${classNameLower}")
-public class ${className}Controller{
+@RequestMapping("/api/v1/log")
+public class LogController{
 
     @Autowired
-    ${className}Service service;
+    LogService service;
 
     @GetMapping()
-    public R ${classNameLower}(${className}Query query) {
+    public R log(LogQuery query) {
         return service.getPage(query);
     }
     

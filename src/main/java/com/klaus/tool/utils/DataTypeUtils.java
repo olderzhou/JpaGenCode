@@ -1,5 +1,11 @@
-<#include "/java_copyright.include"/>
-package ${basepackage}.utils;
+/*
+ * Powered By [rapid-framework]
+ * Web Site: http://www.rapid-framework.org.cn
+ * Google Code: http://code.google.com/p/rapid-framework/
+ * Since 2017 - 2018
+ */
+
+package com.klaus.tool.utils;
 
 import java.math.BigDecimal;
 import java.util.Date;

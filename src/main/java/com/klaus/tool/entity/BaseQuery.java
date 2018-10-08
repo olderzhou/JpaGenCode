@@ -1,12 +1,16 @@
-<#include "/java_copyright.include"/>
-package ${basepackage}.entity;
+/*
+ * Powered By [rapid-framework]
+ * Web Site: http://www.rapid-framework.org.cn
+ * Google Code: http://code.google.com/p/rapid-framework/
+ * Since 2017 - 2018
+ */
+
+package com.klaus.tool.entity;
 
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.util.StringUtils;
-
-import com.klaus.tool.entity.BaseQuery;
 
 import lombok.Data;
 
@@ -19,12 +23,11 @@ public class BaseQuery<T> {
 
     private int pageSize = 20;
 
-    private String keyword;
-
     private String sort;
 
     private boolean isAsc;
 
+    
     public PageRequest getPageReq() {
         //不排序
         if (StringUtils.isEmpty(this.sort)) {
