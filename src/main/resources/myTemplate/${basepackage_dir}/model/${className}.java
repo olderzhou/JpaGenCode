@@ -35,8 +35,8 @@ public class ${className} implements Serializable{
 	public static final String TABLE_NAME = "${table.sqlName}";
 
 	<#list table.columns as column>
-	/*
-	 * <p>${column.columnAlias}</p>
+	/**
+	 * ${column.columnAlias}
 	 */
 	<#if column.pk>
 	@Id
@@ -56,7 +56,9 @@ public class ${className} implements Serializable{
 
     public void updateFromMap(Map<String, Serializable> map) {
         <#list table.columns as column>
-        if(map.containsKey("${column.columnNameLower}")) this.set${column.columnName}(DataTypeUtils.get${column.javaType}Value(map.get("${column.columnNameLower}")));
+        if(map.containsKey("${column.columnNameLower}")) {
+        	this.set${column.columnName}(DataTypeUtils.get${column.javaType}Value(map.get("${column.columnNameLower}")));
+        }
         </#list>
     }
 

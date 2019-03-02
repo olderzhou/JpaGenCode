@@ -1,14 +1,14 @@
 <#include "/java_copyright.include"/>
 package ${basepackage}.service;
 
-import ${basepackage}.entity.BaseQuery;
-import ${basepackage}.entity.PageResult;
+import ${basepackage}.dto.qo.BaseQuery;
+import ${basepackage}.dto.PageResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
-import com.klaus.tool.entity.R;
+import ${basepackage}.dto.R;
 
 import java.io.Serializable;
 import java.util.List;
@@ -45,7 +45,7 @@ public class BaseService<T extends JpaRepository & JpaSpecificationExecutor, Q e
     }
 
     public <S> S findById(Serializable id) {
-        return (S) repository.findOne(id);
+        return (S) repository.findById(id);
     }
 
     public void deleteById(Serializable id) {
@@ -65,7 +65,7 @@ public class BaseService<T extends JpaRepository & JpaSpecificationExecutor, Q e
         return entity;
     }
 
-    public boolean exist(Serializable id) {
-        return repository.exists(id);
+    public boolean exists(Serializable id) {
+        return repository.existsById(id);
     }
 }

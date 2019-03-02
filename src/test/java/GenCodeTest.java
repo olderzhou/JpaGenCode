@@ -11,7 +11,8 @@ public class GenCodeTest {
         //删除生成器的输出目录//
         //g.deleteOutRootDir();
         //通过数据库表生成文件
-        g.generateByTable("t_log", "t_role");
-
+//        g.generateByTable("t_log", "t_role");
+        g.generateByTable("t_user", "t_school");
+//        g.deleteByAllTable();
     }
 }

@@ -35,7 +35,7 @@ public class DataTypeUtils {
         return (Boolean) value;
     }
 
-//    public static <T extends Enum<T>> T getEnumValue(Object value, Class<T> type) {
-//        return value == null?null:(value instanceof Enum?(Enum)value:Enum.valueOf(type, value.toString()));
-//    }
+    public static <T extends Enum<T>> T getEnumValue(Object value, Class<T> type) {
+        return value == null?null:(value instanceof Enum?(T)value:Enum.valueOf(type, value.toString()));
+    }
 }

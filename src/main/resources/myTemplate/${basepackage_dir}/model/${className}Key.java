@@ -24,8 +24,8 @@ public class ${className}Key  implements Serializable{
 	
 	<#list table.columns as column>
 		<#if column.pk>
-		/*
-		 * <p>${column.columnAlias}</p>
+		/**
+		 * ${column.columnAlias}
 		 */
 		<#if column.isDateTimeColumn>
 		@Temporal(TemporalType.DATE)

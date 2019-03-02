@@ -3,12 +3,12 @@
 <#assign classNameLower = className?uncap_first>
 package ${basepackage}.controller;
 
-import ${basepackage}.entity.${className}Query;
+import ${basepackage}.dto.qo.${className}Query;
 import ${basepackage}.service.${className}Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import com.klaus.tool.entity.R;
+import ${basepackage}.dto.R;
 
 
 /**
