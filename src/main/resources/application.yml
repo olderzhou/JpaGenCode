@@ -30,22 +30,22 @@ server:
 #  file: log.txt
 
 
-swagger:
-  enabled: false
-  title: gen-jpa
-  description: genarate code for jpa
-  version: 1.0.0
-  license: Apache License, Version 2.0
-  licenseUrl: https://www.apache.org/licenses/LICENSE-2.0.html
-  termsOfServiceUrl: https://github.com/olderzhou/
-  contact:
-    name: klaus mikaelson
-    url: http://blog.klausmikaelson.top
-    email: love20141002@126.com
-  base-package: com.klaus.gen
-  base-path: /gen/**
-  #, /swagger-resources/**, swagger-ui.html, /v2/api-docs, /webjars/**
-  exclude-path: /error, /ops/**
+#swagger:
+#  enabled: false
+#  title: gen-jpa
+#  description: genarate code for jpa
+#  version: 1.0.0
+#  license: Apache License, Version 2.0
+#  licenseUrl: https://www.apache.org/licenses/LICENSE-2.0.html
+#  termsOfServiceUrl: https://github.com/olderzhou/
+#  contact:
+#    name: klaus mikaelson
+#    url: http://blog.klausmikaelson.top
+#    email: love20141002@126.com
+#  base-package: com.klaus.gen
+#  base-path: /gen/**
+#  #, /swagger-resources/**, swagger-ui.html, /v2/api-docs, /webjars/**
+#  exclude-path: /error, /ops/**
 #  global-operation-parameters:
 #  - { name: access_token, description: user access token, modelRef: string, parameterType: header, required: true}
 #  - { name: timestamp, description: access timestamp, modelRef: int, parameterType: header, required: false}
